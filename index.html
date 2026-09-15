@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QLUE: Quality-Aware Robot Learning from Human Demonstrations</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+    --fg:#1a1a1a;
+  --navy:#1b2a4a;
+  --muted:#5f6b7a;
+  --line:#e4e7ec;
+  --accent:#2563eb;
+  --accent-soft:#eff4ff;
+  --bg:#ffffff;
+  --panel:#fafbfc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  color:var(--fg);background:var(--bg);
+  line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 40px;text-align:center;border-bottom:1px solid var(--line)}
+h1{font-size:2.5rem;font-weight:700;letter-spacing:-0.02em;line-height:1.28;margin-bottom:10px;color:var(--navy)}
+h1 .short{display:block;font-size:3rem;font-weight:700;color:var(--accent);margin-bottom:16px;letter-spacing:0.02em;line-height:1.1}
+.authors{color:var(--muted);font-size:1rem;margin-top:18px}
+.venue{color:var(--muted);font-size:0.92rem;margin-top:6px}
+.links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.links a{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 20px;border-radius:999px;
+  background:var(--fg);color:#fff;text-decoration:none;
+  font-size:0.9rem;font-weight:500;transition:opacity .15s;
+}
+.links a:hover{opacity:.78}
+.links a.alt{background:var(--accent)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+h2{font-size:1.45rem;font-weight:650;letter-spacing:-0.01em;margin-bottom:8px}
+.sub{color:var(--muted);font-size:0.95rem;margin-bottom:26px}
+p{font-size:1rem;color:#2c3542}
+figure{margin:0}
+figure img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line)}
+figure.narrow img{max-width:640px;margin:0 auto}
+figure.mid img{max-width:800px;margin:0 auto}
+figcaption{font-size:0.88rem;color:var(--muted);margin-top:12px;text-align:center}
+.teaser{padding:48px 0 0}
+.teaser img{border:none}
+.abstract{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px 32px}
+.abstract p{font-size:0.98rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.span-center{grid-column:1/-1;max-width:calc(50% - 13px);margin:0 auto}
+.vid-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.vid-card video{width:100%;display:block;background:#000}
+.vid-meta{padding:14px 16px}
+.vid-meta h3{font-size:0.98rem;font-weight:600;margin-bottom:3px}
+.vid-meta span{font-size:0.86rem;color:var(--muted)}
+.pill{
+  display:inline-block;padding:3px 11px;border-radius:999px;
+  background:var(--accent-soft);color:var(--accent);
+  font-size:0.78rem;font-weight:600;margin-bottom:10px;letter-spacing:0.02em;
+}
+.contrib{list-style:none;display:grid;gap:14px}
+.contrib li{
+  padding-left:20px;position:relative;font-size:0.98rem;color:#2c3542;
+}
+.contrib li:before{
+  content:"";position:absolute;left:0;top:10px;
+  width:7px;height:7px;border-radius:50%;background:var(--accent);
+}
+.data-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.data-card{
+  border:1px solid var(--line);border-radius:12px;padding:22px 24px;
+  background:var(--panel);text-decoration:none;color:inherit;
+  transition:border-color .15s,transform .15s;display:block;
+}
+.data-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.data-card h3{font-size:1.02rem;font-weight:600;margin-bottom:6px}
+.data-card p{font-size:0.9rem;color:var(--muted)}
+.data-card .go{font-size:0.86rem;color:var(--accent);font-weight:600;margin-top:12px;display:block}
+pre{
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:20px 22px;overflow-x:auto;font-size:0.84rem;line-height:1.7;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#2c3542;
+}
+footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88rem}
+.stack{display:grid;gap:34px}
+@media (max-width:760px){
+  header{padding:52px 0 32px}
+  h1{font-size:1.6rem}
+  .grid-2,.grid-3,.grid-4,.data-grid{grid-template-columns:1fr}
+  section{padding:42px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>
+      <!-- <span class="short">QLUE</span> -->
+      Identify What Matters, Learn Better:<br>Quality-Aware Robot Learning from Human Demonstrations
+    </h1>
+    <div class="links">
+      <a class="alt" href="#">Code</a>
+      <a class="alt" href="#dataset">Dataset</a>
+    </div>
+  </div>
+</header>
+
+<div class="teaser">
+  <div class="wrap">
+    <figure class="mid">
+        <img src="src/teaser.png" alt="Suboptimal behavior can still provide useful supervision">
+      <figcaption>Even successful teleoperation contains hesitation, unnecessary motion, and recovery. Such behavior can still provide useful supervision for policy learning.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="abstract">
+      <span class="pill">Abstract</span>
+      <p>Human teleoperation is costly and produces trajectories with varying execution quality. Behavioral imperfection, however, does not necessarily make a demonstration less useful for learning. We propose <strong>QLUE</strong>, which adjusts each trajectory's training contribution according to its estimated usefulness while retaining the full collected dataset. QLUE characterizes trajectory-induced policy updates through <em>Learning Coherence</em> and <em>Incremental Learning Signal</em>, which together define a trajectory-level <em>Demonstration Quality Score</em>. On real-world manipulation, QLUE improves average success rate over Uniform BC by 15.0 percentage points, and the quality score tracks downstream BC performance across datasets with different forms of suboptimal behavior.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Method</h2>
+    <p class="sub">Quality estimation uses only the collected demonstrations and the pretrained policy, before any downstream training.</p>
+    <figure>
+      <img src="src/method_overview.png" alt="QLUE framework overview">
+      <figcaption>Normalized trajectory-induced updates are compared against the consensus update of the remaining demonstrations. Learning Coherence and Incremental Learning Signal jointly determine trajectory quality, which is converted into soft weights for quality-aware behavior cloning.</figcaption>
+    </figure>
+    <ul class="contrib" style="margin-top:34px">
+      <li><strong>Learning Coherence</strong> measures agreement between a trajectory's update and the dataset's consensus update.</li>
+      <li><strong>Incremental Learning Signal</strong> estimates supervision beyond what the consensus already captures.</li>
+      <li><strong>Demonstration Quality Score</strong> combines both, guiding training without discarding any demonstration.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Suboptimal Behaviors</h2>
+    <p class="sub">Real-world Cube Stacking on the SO-101 arm. All demonstrations complete the task successfully.</p>
+    <div class="grid-2">
+        <div class="vid-card">
+          <video src="src/stop.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta">
+            <h3>Stop</h3>
+            <span>Hesitation during execution</span>
+          </div>
+        </div>
+        <div class="vid-card">
+          <video src="src/detour.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta">
+            <h3>Detour</h3>
+            <span>Unnecessary motion toward the goal</span>
+          </div>
+        </div>
+        <div class="vid-card span-center">
+          <video src="src/recovery.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta">
+            <h3>Recovery</h3>
+            <span>Correction after a failed attempt</span>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Results</h2>
+    <p class="sub">Four ManiSkill3 tasks and three real-world tasks, evaluated with two VLA backbones.</p>
+    <div class="stack">
+      <figure>
+        <img src="src/table_main.png" alt="Success rates on ManiSkill3 manipulation tasks">
+        <figcaption>Success rates (%) on four ManiSkill3 manipulation tasks.</figcaption>
+      </figure>
+      <figure class="narrow">
+        <img src="src/realworld_bar.png" alt="Real-world policy performance">
+        <figcaption>Real-world success rates across three SO-101 manipulation tasks. QLUE improves over Uniform BC on every task.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Demonstration Quality Analysis</h2>
+    <p class="sub">The dataset-level score is computed before policy training, without environment evaluation.</p>
+    <div class="grid-2">
+      <figure>
+        <img src="src/quality_scatter.png" alt="Dataset quality score versus downstream performance">
+        <figcaption>Datasets with larger <em>S(D)</em> yield higher downstream BC performance.</figcaption>
+      </figure>
+      <figure>
+        <img src="src/quality_recovery.png" alt="Quality assessment across recovery demonstration settings">
+        <figcaption>The score follows downstream performance across recovery proportions.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Ablation</h2>
+    <p class="sub">ManiSkill3 Cube Stacking with the same quality scores under different usage.</p>
+    <figure class="mid">
+        <img src="src/table_ablation.png" alt="Ablation of Learning Coherence, Incremental Learning Signal, and soft weighting">
+      <figcaption>Reducing the influence of lower-scoring demonstrations is more effective than removing them.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+    <div class="wrap">
+      <h2>Policy Rollouts</h2>
+      <p class="sub">Successful executions of policies trained with QLUE.</p>
+  
+      <span class="pill">Simulation &mdash; ManiSkill3</span>
+      <div class="grid-2" style="margin-top:14px">
+        <div class="vid-card">
+          <video src="src/sim_cube_stacking.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta"><h3>Cube Stacking</h3></div>
+        </div>
+        <div class="vid-card">
+          <video src="src/sim_cube_pulling.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta"><h3>Tool-Assisted Cube Pulling</h3></div>
+        </div>
+        <div class="vid-card">
+          <video src="src/sim_sphere_placement.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta"><h3>Sphere Placement</h3></div>
+        </div>
+        <div class="vid-card">
+          <video src="src/sim_peg_lifting.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta"><h3>Upright Peg Lifting</h3></div>
+        </div>
+      </div>
+  
+      <span class="pill" style="margin-top:34px">Real-World &mdash; SO-101</span>
+      <div class="grid-2" style="margin-top:14px">
+        <div class="vid-card">
+          <video src="src/real_cube_stacking.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta"><h3>Cube Stacking</h3></div>
+        </div>
+        <div class="vid-card">
+          <video src="src/real_pick_and_place.mp4" controls muted loop playsinline preload="metadata"></video>
+          <div class="vid-meta"><h3>Multi-Object Pick-and-Place</h3></div>
+        </div>
+        <div class="vid-card" style="grid-column:1/-1;max-width:calc(50% - 13px);margin:0 auto">
+            <video src="src/real_marker_placement.mp4" controls muted loop playsinline preload="metadata"></video>
+            <div class="vid-meta"><h3>Office Marker Placement</h3></div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+<section id="dataset">
+  <div class="wrap">
+    <h2>Dataset</h2>
+    <p class="sub">Demonstration datasets with controlled suboptimal behavior, released for further research.</p>
+    <div class="data-grid">
+      <a class="data-card" href="#">
+        <h3>Real-World Demonstrations</h3>
+        <p>SO-101 arm, three manipulation tasks. Stop, detour, and recovery behavior at controlled proportions.</p>
+        <span class="go">View on GitHub</span>
+      </a>
+      <a class="data-card" href="#">
+        <h3>ManiSkill3 Demonstrations</h3>
+        <p>Franka Panda, four manipulation tasks. Matched suboptimal behavior settings in simulation.</p>
+        <span class="go">View on GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
