@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QLUE: Quality-Aware Robot Learning from Human Demonstrations</title>
+<title>QLUE: Quality-Aware Robot Learning from Imperfect Demonstrations</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-    --fg:#1a1a1a;
+  --fg:#1a1a1a;
   --navy:#1b2a4a;
   --muted:#5f6b7a;
   --line:#e4e7ec;
@@ -25,9 +25,6 @@ body{
 .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
 header{padding:72px 0 40px;text-align:center;border-bottom:1px solid var(--line)}
 h1{font-size:2.5rem;font-weight:700;letter-spacing:-0.02em;line-height:1.28;margin-bottom:10px;color:var(--navy)}
-h1 .short{display:block;font-size:3rem;font-weight:700;color:var(--accent);margin-bottom:16px;letter-spacing:0.02em;line-height:1.1}
-.authors{color:var(--muted);font-size:1rem;margin-top:18px}
-.venue{color:var(--muted);font-size:0.92rem;margin-top:6px}
 .links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 .links a{
   display:inline-flex;align-items:center;gap:7px;
@@ -52,9 +49,9 @@ figcaption{font-size:0.88rem;color:var(--muted);margin-top:12px;text-align:cente
 .abstract{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px 32px}
 .abstract p{font-size:0.98rem}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.span-center{grid-column:1/-1;max-width:calc(50% - 13px);margin:0 auto}
+.span-center{grid-column:1/-1;max-width:calc(50% - 13px);margin:0 auto;width:100%}
+figure.table-fig img{max-width:580px;margin:0 auto}
+figure.ablation-fig img{max-width:550px;margin:0 auto}
 .vid-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .vid-card video{width:100%;display:block;background:#000}
 .vid-meta{padding:14px 16px}
@@ -83,17 +80,13 @@ figcaption{font-size:0.88rem;color:var(--muted);margin-top:12px;text-align:cente
 .data-card h3{font-size:1.02rem;font-weight:600;margin-bottom:6px}
 .data-card p{font-size:0.9rem;color:var(--muted)}
 .data-card .go{font-size:0.86rem;color:var(--accent);font-weight:600;margin-top:12px;display:block}
-pre{
-  background:var(--panel);border:1px solid var(--line);border-radius:10px;
-  padding:20px 22px;overflow-x:auto;font-size:0.84rem;line-height:1.7;
-  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#2c3542;
-}
-footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88rem}
 .stack{display:grid;gap:34px}
 @media (max-width:760px){
   header{padding:52px 0 32px}
   h1{font-size:1.6rem}
-  .grid-2,.grid-3,.grid-4,.data-grid{grid-template-columns:1fr}
+  .grid-2,.data-grid{grid-template-columns:1fr}
+  .span-center{max-width:100%}
+  .abstract{padding:22px 20px}
   section{padding:42px 0}
 }
 </style>
@@ -103,8 +96,7 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
 <header>
   <div class="wrap">
     <h1>
-      <!-- <span class="short">QLUE</span> -->
-      Identify What Matters, Learn Better:<br>Quality-Aware Robot Learning from Human Demonstrations
+      QLUE: Quality-Aware Robot Learning<br>from Imperfect Demonstrations
     </h1>
     <div class="links">
       <a class="alt" href="#">Code</a>
@@ -116,7 +108,7 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
 <div class="teaser">
   <div class="wrap">
     <figure class="mid">
-        <img src="src/teaser.png" alt="Suboptimal behavior can still provide useful supervision">
+      <img src="src/teaser.png" alt="Suboptimal behavior can still provide useful supervision">
       <figcaption>Even successful teleoperation contains hesitation, unnecessary motion, and recovery. Such behavior can still provide useful supervision for policy learning.</figcaption>
     </figure>
   </div>
@@ -126,7 +118,7 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
   <div class="wrap">
     <div class="abstract">
       <span class="pill">Abstract</span>
-      <p>Human teleoperation is costly and produces trajectories with varying execution quality. Behavioral imperfection, however, does not necessarily make a demonstration less useful for learning. We propose <strong>QLUE</strong>, which adjusts each trajectory's training contribution according to its estimated usefulness while retaining the full collected dataset. QLUE characterizes trajectory-induced policy updates through <em>Learning Coherence</em> and <em>Incremental Learning Signal</em>, which together define a trajectory-level <em>Demonstration Quality Score</em>. On real-world manipulation, QLUE improves average success rate over Uniform BC by 15.0 percentage points, and the quality score tracks downstream BC performance across datasets with different forms of suboptimal behavior.</p>
+      <p>Human teleoperation is a widely used approach for collecting real-world demonstrations for robot policy learning, enabling robots to learn manipulation skills directly from human supervision. However, collecting such demonstrations is costly, and their execution quality can vary substantially. Even trajectories ranked lower by data curation may still contain useful supervision, such as corrective actions following failed attempts. Preserving this supervision is particularly important when the available demonstrations are limited. We propose <strong>QLUE</strong> (<strong>Q</strong>uality-Aware <strong>L</strong>earning via <strong>U</strong>sefulness <strong>E</strong>stimation of Demonstrations), a framework that estimates demonstration usefulness and adjusts training contributions while retaining the collected dataset. QLUE uses normalized imitation-loss gradients at the pretrained policy initialization to estimate usefulness without requiring separate validation demonstrations or task-specific reward models. <em>Learning Coherence</em> measures agreement with the consensus of other demonstrations, while <em>Incremental Learning Signal</em> captures differences in parameter-wise update emphasis. The resulting trajectory scores guide behavior cloning (BC) through an interpolation between uniform and quality-based weighting. We evaluate QLUE through real-world manipulation experiments and simulation studies using demonstration datasets with controlled stop, detour, and recovery behaviors. Across three real-world tasks, QLUE increases the average success rate of &pi;<sub>0</sub> from 62.1% with uniform BC to 77.1%, a gain of 15.0 percentage points. Complementary experiments in ManiSkill3 compare the proposed weighting strategy with quality-based subset selection and assess the contributions of the two quality measures.</p>
     </div>
   </div>
 </section>
@@ -137,12 +129,12 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
     <p class="sub">Quality estimation uses only the collected demonstrations and the pretrained policy, before any downstream training.</p>
     <figure>
       <img src="src/method_overview.png" alt="QLUE framework overview">
-      <figcaption>Normalized trajectory-induced updates are compared against the consensus update of the remaining demonstrations. Learning Coherence and Incremental Learning Signal jointly determine trajectory quality, which is converted into soft weights for quality-aware behavior cloning.</figcaption>
+      <figcaption>Normalized trajectory-induced updates are compared against the consensus update of the other demonstrations. Learning Coherence and Incremental Learning Signal jointly determine trajectory quality, which is converted into soft weights for quality-aware behavior cloning.</figcaption>
     </figure>
     <ul class="contrib" style="margin-top:34px">
-      <li><strong>Learning Coherence</strong> measures agreement between a trajectory's update and the dataset's consensus update.</li>
-      <li><strong>Incremental Learning Signal</strong> estimates supervision beyond what the consensus already captures.</li>
-      <li><strong>Demonstration Quality Score</strong> combines both, guiding training without discarding any demonstration.</li>
+      <li><strong>Learning Coherence</strong> measures agreement between a trajectory's update and the consensus update of the other demonstrations.</li>
+      <li><strong>Incremental Learning Signal</strong> captures differences in parameter-wise update emphasis relative to the consensus.</li>
+      <li><strong>Demonstration Quality Score</strong> combines both and guides behavior cloning without discarding any demonstration.</li>
     </ul>
   </div>
 </section>
@@ -152,43 +144,47 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
     <h2>Suboptimal Behaviors</h2>
     <p class="sub">Real-world Cube Stacking on the SO-101 arm. All demonstrations complete the task successfully.</p>
     <div class="grid-2">
-        <div class="vid-card">
-          <video src="src/stop.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta">
-            <h3>Stop</h3>
-            <span>Hesitation during execution</span>
-          </div>
-        </div>
-        <div class="vid-card">
-          <video src="src/detour.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta">
-            <h3>Detour</h3>
-            <span>Unnecessary motion toward the goal</span>
-          </div>
-        </div>
-        <div class="vid-card span-center">
-          <video src="src/recovery.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta">
-            <h3>Recovery</h3>
-            <span>Correction after a failed attempt</span>
-          </div>
+      <div class="vid-card">
+        <video src="src/stop.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta">
+          <h3>Stop</h3>
+          <span>Hesitation during execution</span>
         </div>
       </div>
+      <div class="vid-card">
+        <video src="src/detour.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta">
+          <h3>Detour</h3>
+          <span>Unnecessary motion toward the goal</span>
+        </div>
+      </div>
+      <div class="vid-card span-center">
+        <video src="src/recovery.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta">
+          <h3>Recovery</h3>
+          <span>Correction after a failed attempt</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2>Results</h2>
-    <p class="sub">Four ManiSkill3 tasks and three real-world tasks, evaluated with two VLA backbones.</p>
+    <p class="sub">Three ManiSkill3 tasks with &pi;<sub>0</sub>, additional policy backbones on Upright Peg Lifting, and three real-world tasks on the SO-101 arm.</p>
     <div class="stack">
       <figure>
-        <img src="src/table_main.png" alt="Success rates on ManiSkill3 manipulation tasks">
-        <figcaption>Success rates (%) on four ManiSkill3 manipulation tasks.</figcaption>
+        <img src="src/sim_bar_pi0.png" alt="Simulation performance of pi0 on ManiSkill3">
+        <figcaption>Success rates (%) with &pi;<sub>0</sub> on three ManiSkill3 tasks. QLUE achieves the highest success rate on all three tasks.</figcaption>
+      </figure>
+      <figure class="table-fig">
+        <img src="src/table_backbone.png" alt="Policy learning performance across backbones">
+        <figcaption>Success rates (%) on ManiSkill3 Upright Peg Lifting with SmolVLA and GR00T N1.5.</figcaption>
       </figure>
       <figure class="narrow">
         <img src="src/realworld_bar.png" alt="Real-world policy performance">
-        <figcaption>Real-world success rates across three SO-101 manipulation tasks. QLUE improves over Uniform BC on every task.</figcaption>
+        <figcaption>Real-world success rates of &pi;<sub>0</sub> across three SO-101 manipulation tasks. QLUE improves over Uniform BC on every task.</figcaption>
       </figure>
     </div>
   </div>
@@ -201,11 +197,11 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
     <div class="grid-2">
       <figure>
         <img src="src/quality_scatter.png" alt="Dataset quality score versus downstream performance">
-        <figcaption>Datasets with larger <em>S(D)</em> yield higher downstream BC performance.</figcaption>
+        <figcaption>Datasets with larger <em>S(D)</em> generally yield higher downstream BC performance.</figcaption>
       </figure>
       <figure>
         <img src="src/quality_recovery.png" alt="Quality assessment across recovery demonstration settings">
-        <figcaption>The score follows downstream performance across recovery proportions.</figcaption>
+        <figcaption>The score follows downstream BC performance across recovery demonstration ratios.</figcaption>
       </figure>
     </div>
   </div>
@@ -214,56 +210,52 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
 <section>
   <div class="wrap">
     <h2>Ablation</h2>
-    <p class="sub">ManiSkill3 Cube Stacking with the same quality scores under different usage.</p>
+    <p class="sub">ManiSkill3 Cube Stacking with &pi;<sub>0</sub>, using the same quality scores under different usage.</p>
     <figure class="mid">
-        <img src="src/table_ablation.png" alt="Ablation of Learning Coherence, Incremental Learning Signal, and soft weighting">
+      <img src="src/table_ablation.png" alt="Ablation of Learning Coherence, Incremental Learning Signal, and soft weighting">
       <figcaption>Reducing the influence of lower-scoring demonstrations is more effective than removing them.</figcaption>
     </figure>
   </div>
 </section>
 
 <section>
-    <div class="wrap">
-      <h2>Policy Rollouts</h2>
-      <p class="sub">Successful executions of policies trained with QLUE.</p>
-  
-      <span class="pill">Simulation &mdash; ManiSkill3</span>
-      <div class="grid-2" style="margin-top:14px">
-        <div class="vid-card">
-          <video src="src/sim_cube_stacking.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta"><h3>Cube Stacking</h3></div>
-        </div>
-        <div class="vid-card">
-          <video src="src/sim_cube_pulling.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta"><h3>Tool-Assisted Cube Pulling</h3></div>
-        </div>
-        <div class="vid-card">
-          <video src="src/sim_sphere_placement.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta"><h3>Sphere Placement</h3></div>
-        </div>
-        <div class="vid-card">
-          <video src="src/sim_peg_lifting.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta"><h3>Upright Peg Lifting</h3></div>
-        </div>
+  <div class="wrap">
+    <h2>Policy Rollouts</h2>
+    <p class="sub">Successful executions of policies trained with QLUE.</p>
+
+    <span class="pill">Simulation &mdash; ManiSkill3</span>
+    <div class="grid-2" style="margin-top:14px">
+      <div class="vid-card">
+        <video src="src/sim_cube_stacking.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta"><h3>Cube Stacking</h3></div>
       </div>
-  
-      <span class="pill" style="margin-top:34px">Real-World &mdash; SO-101</span>
-      <div class="grid-2" style="margin-top:14px">
-        <div class="vid-card">
-          <video src="src/real_cube_stacking.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta"><h3>Cube Stacking</h3></div>
-        </div>
-        <div class="vid-card">
-          <video src="src/real_pick_and_place.mp4" controls muted loop playsinline preload="metadata"></video>
-          <div class="vid-meta"><h3>Multi-Object Pick-and-Place</h3></div>
-        </div>
-        <div class="vid-card" style="grid-column:1/-1;max-width:calc(50% - 13px);margin:0 auto">
-            <video src="src/real_marker_placement.mp4" controls muted loop playsinline preload="metadata"></video>
-            <div class="vid-meta"><h3>Office Marker Placement</h3></div>
-          </div>
+      <div class="vid-card">
+        <video src="src/sim_peg_lifting.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta"><h3>Upright Peg Lifting</h3></div>
+      </div>
+      <div class="vid-card span-center">
+        <video src="src/sim_sphere_placement.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta"><h3>Sphere Placement</h3></div>
       </div>
     </div>
-  </section>
+
+    <span class="pill" style="margin-top:34px">Real-World &mdash; SO-101</span>
+    <div class="grid-2" style="margin-top:14px">
+      <div class="vid-card">
+        <video src="src/real_cube_stacking.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta"><h3>Cube Stacking</h3></div>
+      </div>
+      <div class="vid-card">
+        <video src="src/real_pick_and_place.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta"><h3>Multi-Object Pick-and-Place</h3></div>
+      </div>
+      <div class="vid-card span-center">
+        <video src="src/real_marker_placement.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="vid-meta"><h3>Office Marker Placement</h3></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="dataset">
   <div class="wrap">
@@ -277,13 +269,12 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:0.88re
       </a>
       <a class="data-card" href="#">
         <h3>ManiSkill3 Demonstrations</h3>
-        <p>Franka Panda, four manipulation tasks. Matched suboptimal behavior settings in simulation.</p>
+        <p>Franka Panda, three manipulation tasks. Matched suboptimal behavior settings in simulation.</p>
         <span class="go">View on GitHub</span>
       </a>
     </div>
   </div>
 </section>
-
 
 </body>
 </html>
