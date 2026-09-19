@@ -1,0 +1,869 @@
+[
+  {
+    "seed": 19,
+    "condition": "clean",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 34,
+    "condition": "clean",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 65,
+    "condition": "clean",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 1,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 2,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 3,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        159,
+        204
+      ]
+    }
+  },
+  {
+    "seed": 8,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 10,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 14,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        154,
+        198
+      ]
+    }
+  },
+  {
+    "seed": 15,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        152,
+        198
+      ]
+    }
+  },
+  {
+    "seed": 18,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 19,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 20,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        153,
+        195
+      ]
+    }
+  },
+  {
+    "seed": 23,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 28,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 30,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 32,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 33,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 34,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 35,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 37,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 40,
+    "condition": "detour",
+    "error": "waypoint tracking error",
+    "events": {
+      "waypoint_0": [
+        139,
+        810
+      ]
+    }
+  },
+  {
+    "seed": 41,
+    "condition": "detour",
+    "error": "waypoint tracking error",
+    "events": {
+      "waypoint_0": [
+        134,
+        745
+      ]
+    }
+  },
+  {
+    "seed": 42,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 43,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 44,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 46,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        148,
+        192
+      ]
+    }
+  },
+  {
+    "seed": 47,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        165,
+        208
+      ]
+    }
+  },
+  {
+    "seed": 48,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        152,
+        193
+      ]
+    }
+  },
+  {
+    "seed": 49,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        156,
+        194
+      ]
+    }
+  },
+  {
+    "seed": 50,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 52,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 53,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 54,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 55,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 57,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 59,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 60,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        168,
+        206
+      ]
+    }
+  },
+  {
+    "seed": 63,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 65,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {}
+  },
+  {
+    "seed": 66,
+    "condition": "detour",
+    "error": "planning failed",
+    "events": {
+      "waypoint_0": [
+        160,
+        208
+      ]
+    }
+  },
+  {
+    "seed": 67,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 68,
+    "condition": "detour",
+    "error": "horizon exhausted",
+    "events": {}
+  },
+  {
+    "seed": 15,
+    "condition": "recovery",
+    "error": "planning failed",
+    "events": {
+      "failed_attempt": [
+        0,
+        119
+      ],
+      "retreat": [
+        119,
+        145
+      ],
+      "retry": [
+        151,
+        151
+      ]
+    }
+  },
+  {
+    "seed": 19,
+    "condition": "recovery",
+    "error": "horizon exhausted",
+    "events": {
+      "failed_attempt": [
+        0,
+        410
+      ],
+      "retreat": [
+        410,
+        545
+      ],
+      "retry": [
+        551,
+        551
+      ]
+    }
+  },
+  {
+    "seed": 28,
+    "condition": "recovery",
+    "error": "planning failed",
+    "events": {
+      "failed_attempt": [
+        0,
+        119
+      ],
+      "retreat": [
+        119,
+        140
+      ],
+      "retry": [
+        146,
+        146
+      ]
+    }
+  },
+  {
+    "seed": 29,
+    "condition": "recovery",
+    "error": "planning failed",
+    "events": {
+      "failed_attempt": [
+        0,
+        108
+      ],
+      "retreat": [
+        108,
+        133
+      ],
+      "retry": [
+        139,
+        139
+      ]
+    }
+  },
+  {
+    "seed": 32,
+    "condition": "recovery",
+    "error": "planning failed",
+    "events": {
+      "failed_attempt": [
+        0,
+        119
+      ],
+      "retreat": [
+        119,
+        140
+      ],
+      "retry": [
+        146,
+        146
+      ]
+    }
+  },
+  {
+    "seed": 34,
+    "condition": "recovery",
+    "error": "planning failed",
+    "events": {
+      "failed_attempt": [
+        0,
+        119
+      ],
+      "retreat": [
+        119,
+        140
+      ],
+      "retry": [
+        146,
+        146
+      ]
+    }
+  },
+  {
+    "seed": 42,
+    "condition": "recovery",
+    "error": "planning failed",
+    "events": {
+      "failed_attempt": [
+        0,
+        384
+      ],
+      "retreat": [
+        384,
+        546
+      ],
+      "retry": [
+        552,
+        552
+      ]
+    }
+  },
+  {
+    "seed": 45,
+    "condition": "recovery",
+    "error": "final success not stable for 10 frames",
+    "events": {
+      "failed_attempt": [
+        0,
+        106
+      ],
+      "retreat": [
+        106,
+        131
+      ],
+      "retry": [
+        137,
+        137
+      ],
+      "settle": [
+        336,
+        356
+      ]
+    }
+  },
+  {
+    "seed": 65,
+    "condition": "recovery",
+    "error": "horizon exhausted",
+    "events": {
+      "failed_attempt": [
+        0,
+        750
+      ]
+    }
+  },
+  {
+    "seed": 19,
+    "condition": "stop",
+    "error": "horizon exhausted",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "seed": 27,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.005196592304855585",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        170,
+        190
+      ],
+      "settle": [
+        276,
+        296
+      ],
+      "final_success": [
+        286,
+        296
+      ]
+    }
+  },
+  {
+    "seed": 28,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.0072293877601623535",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        165,
+        185
+      ],
+      "settle": [
+        272,
+        292
+      ],
+      "final_success": [
+        282,
+        292
+      ]
+    }
+  },
+  {
+    "seed": 30,
+    "condition": "stop",
+    "error": "stop_after_lift tcp drift 0.005209983792155981",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        372,
+        392
+      ],
+      "settle": [
+        484,
+        504
+      ],
+      "final_success": [
+        494,
+        504
+      ]
+    }
+  },
+  {
+    "seed": 32,
+    "condition": "stop",
+    "error": "stop_after_lift tcp drift 0.005164962261915207",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        214,
+        234
+      ],
+      "settle": [
+        325,
+        345
+      ],
+      "final_success": [
+        335,
+        345
+      ]
+    }
+  },
+  {
+    "seed": 34,
+    "condition": "stop",
+    "error": "planning failed",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        270,
+        290
+      ]
+    }
+  },
+  {
+    "seed": 37,
+    "condition": "stop",
+    "error": "stop_after_lift tcp drift 0.005072310101240873",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        169,
+        189
+      ],
+      "settle": [
+        272,
+        292
+      ],
+      "final_success": [
+        282,
+        292
+      ]
+    }
+  },
+  {
+    "seed": 42,
+    "condition": "stop",
+    "error": "stop_after_lift tcp drift 0.00529517000541091",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        342,
+        362
+      ],
+      "settle": [
+        461,
+        481
+      ],
+      "final_success": [
+        471,
+        481
+      ]
+    }
+  },
+  {
+    "seed": 44,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.005580477882176638",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        167,
+        187
+      ],
+      "settle": [
+        270,
+        290
+      ],
+      "final_success": [
+        280,
+        290
+      ]
+    }
+  },
+  {
+    "seed": 50,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.006256430875509977",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        160,
+        180
+      ],
+      "settle": [
+        266,
+        286
+      ],
+      "final_success": [
+        276,
+        286
+      ]
+    }
+  },
+  {
+    "seed": 51,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.005185454618185759",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        161,
+        181
+      ],
+      "settle": [
+        268,
+        288
+      ],
+      "final_success": [
+        278,
+        288
+      ]
+    }
+  },
+  {
+    "seed": 52,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.0055243647657334805",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        163,
+        183
+      ],
+      "settle": [
+        266,
+        286
+      ],
+      "final_success": [
+        276,
+        286
+      ]
+    }
+  },
+  {
+    "seed": 55,
+    "condition": "stop",
+    "error": "stop_after_lift tcp drift 0.005229759030044079",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        181,
+        201
+      ],
+      "settle": [
+        290,
+        310
+      ],
+      "final_success": [
+        300,
+        310
+      ]
+    }
+  },
+  {
+    "seed": 56,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.005240203347057104",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        158,
+        178
+      ],
+      "settle": [
+        265,
+        285
+      ],
+      "final_success": [
+        275,
+        285
+      ]
+    }
+  },
+  {
+    "seed": 59,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.005609371233731508",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        168,
+        188
+      ],
+      "settle": [
+        269,
+        289
+      ],
+      "final_success": [
+        279,
+        289
+      ]
+    }
+  },
+  {
+    "seed": 63,
+    "condition": "stop",
+    "error": "stop_after_lift tcp drift 0.005132721737027168",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        165,
+        185
+      ],
+      "settle": [
+        275,
+        295
+      ],
+      "final_success": [
+        285,
+        295
+      ]
+    }
+  },
+  {
+    "seed": 65,
+    "condition": "stop",
+    "error": "planning failed",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "seed": 67,
+    "condition": "stop",
+    "error": "stop_after_lift peg drift 0.005602383054792881",
+    "events": {
+      "stop_before_grasp": [
+        0,
+        20
+      ],
+      "stop_after_lift": [
+        162,
+        182
+      ],
+      "settle": [
+        269,
+        289
+      ],
+      "final_success": [
+        279,
+        289
+      ]
+    }
+  }
+]

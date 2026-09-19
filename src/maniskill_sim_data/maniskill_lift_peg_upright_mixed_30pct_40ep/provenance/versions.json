@@ -1,0 +1,17 @@
+{
+  "lerobot": "0.4.4",
+  "numpy": "2.2.6",
+  "torch": "2.10.0",
+  "h5py": "3.14.0",
+  "datasets": "4.8.5",
+  "pyarrow": "25.0.1",
+  "av": "15.1.0",
+  "simulation": {
+    "mani_skill": "3.0.1",
+    "sapien": "3.0.3",
+    "mplib": "0.1.1",
+    "numpy": "1.26.4",
+    "torch": "2.10.0",
+    "gymnasium": "1.3.0"
+  }
+}

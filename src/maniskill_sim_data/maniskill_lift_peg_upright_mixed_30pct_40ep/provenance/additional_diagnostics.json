@@ -1,0 +1,206 @@
+[
+  {
+    "episode_index": 0,
+    "last10_max_linear_speed_m_s": 0.00861357245594263,
+    "last10_max_angular_speed_rad_s": 0.0554547980427742,
+    "detour_grasp_maintained_through_return": true
+  },
+  {
+    "episode_index": 1,
+    "last10_max_linear_speed_m_s": 0.008603471331298351,
+    "last10_max_angular_speed_rad_s": 0.05566028878092766
+  },
+  {
+    "episode_index": 2,
+    "last10_max_linear_speed_m_s": 0.008597036823630333,
+    "last10_max_angular_speed_rad_s": 0.05539507046341896
+  },
+  {
+    "episode_index": 3,
+    "last10_max_linear_speed_m_s": 0.00860995426774025,
+    "last10_max_angular_speed_rad_s": 0.05568363517522812
+  },
+  {
+    "episode_index": 4,
+    "last10_max_linear_speed_m_s": 0.008610636927187443,
+    "last10_max_angular_speed_rad_s": 0.055949047207832336
+  },
+  {
+    "episode_index": 5,
+    "last10_max_linear_speed_m_s": 0.008602099493145943,
+    "last10_max_angular_speed_rad_s": 0.0554787777364254
+  },
+  {
+    "episode_index": 6,
+    "last10_max_linear_speed_m_s": 0.008602258749306202,
+    "last10_max_angular_speed_rad_s": 0.055647142231464386
+  },
+  {
+    "episode_index": 7,
+    "last10_max_linear_speed_m_s": 0.008641192689538002,
+    "last10_max_angular_speed_rad_s": 0.05617860332131386
+  },
+  {
+    "episode_index": 8,
+    "last10_max_linear_speed_m_s": 0.008619777858257294,
+    "last10_max_angular_speed_rad_s": 0.055523913353681564
+  },
+  {
+    "episode_index": 9,
+    "last10_max_linear_speed_m_s": 0.008602133020758629,
+    "last10_max_angular_speed_rad_s": 0.055510349571704865
+  },
+  {
+    "episode_index": 10,
+    "last10_max_linear_speed_m_s": 0.008607891388237476,
+    "last10_max_angular_speed_rad_s": 0.0552879236638546
+  },
+  {
+    "episode_index": 11,
+    "last10_max_linear_speed_m_s": 0.008632219396531582,
+    "last10_max_angular_speed_rad_s": 0.055294785648584366
+  },
+  {
+    "episode_index": 12,
+    "last10_max_linear_speed_m_s": 0.008598179556429386,
+    "last10_max_angular_speed_rad_s": 0.055653657764196396
+  },
+  {
+    "episode_index": 13,
+    "last10_max_linear_speed_m_s": 0.008594946935772896,
+    "last10_max_angular_speed_rad_s": 0.05576544627547264
+  },
+  {
+    "episode_index": 14,
+    "last10_max_linear_speed_m_s": 0.00860613863915205,
+    "last10_max_angular_speed_rad_s": 0.05569649115204811
+  },
+  {
+    "episode_index": 15,
+    "last10_max_linear_speed_m_s": 0.008674069307744503,
+    "last10_max_angular_speed_rad_s": 0.05387116223573685,
+    "detour_grasp_maintained_through_return": true
+  },
+  {
+    "episode_index": 16,
+    "last10_max_linear_speed_m_s": 0.008632322773337364,
+    "last10_max_angular_speed_rad_s": 0.05395393818616867
+  },
+  {
+    "episode_index": 17,
+    "last10_max_linear_speed_m_s": 0.008595354855060577,
+    "last10_max_angular_speed_rad_s": 0.055761948227882385
+  },
+  {
+    "episode_index": 18,
+    "last10_max_linear_speed_m_s": 0.008591667748987675,
+    "last10_max_angular_speed_rad_s": 0.05577211454510689
+  },
+  {
+    "episode_index": 19,
+    "last10_max_linear_speed_m_s": 0.008609255775809288,
+    "last10_max_angular_speed_rad_s": 0.055466048419475555
+  },
+  {
+    "episode_index": 20,
+    "last10_max_linear_speed_m_s": 0.008610974997282028,
+    "last10_max_angular_speed_rad_s": 0.054206497967243195
+  },
+  {
+    "episode_index": 21,
+    "last10_max_linear_speed_m_s": 0.008602014742791653,
+    "last10_max_angular_speed_rad_s": 0.05550311505794525
+  },
+  {
+    "episode_index": 22,
+    "last10_max_linear_speed_m_s": 0.00859660841524601,
+    "last10_max_angular_speed_rad_s": 0.055748261511325836,
+    "detour_grasp_maintained_through_return": true
+  },
+  {
+    "episode_index": 23,
+    "last10_max_linear_speed_m_s": 0.00861339271068573,
+    "last10_max_angular_speed_rad_s": 0.05542820692062378,
+    "detour_grasp_maintained_through_return": true
+  },
+  {
+    "episode_index": 24,
+    "last10_max_linear_speed_m_s": 0.008603175170719624,
+    "last10_max_angular_speed_rad_s": 0.05527485907077789
+  },
+  {
+    "episode_index": 25,
+    "last10_max_linear_speed_m_s": 0.008620196022093296,
+    "last10_max_angular_speed_rad_s": 0.0555158331990242
+  },
+  {
+    "episode_index": 26,
+    "last10_max_linear_speed_m_s": 0.008596891537308693,
+    "last10_max_angular_speed_rad_s": 0.05570001155138016
+  },
+  {
+    "episode_index": 27,
+    "last10_max_linear_speed_m_s": 0.008610233664512634,
+    "last10_max_angular_speed_rad_s": 0.055615440011024475
+  },
+  {
+    "episode_index": 28,
+    "last10_max_linear_speed_m_s": 0.00859831552952528,
+    "last10_max_angular_speed_rad_s": 0.05561782792210579
+  },
+  {
+    "episode_index": 29,
+    "last10_max_linear_speed_m_s": 0.008609388023614883,
+    "last10_max_angular_speed_rad_s": 0.05561717227101326
+  },
+  {
+    "episode_index": 30,
+    "last10_max_linear_speed_m_s": 0.008611508645117283,
+    "last10_max_angular_speed_rad_s": 0.055273957550525665
+  },
+  {
+    "episode_index": 31,
+    "last10_max_linear_speed_m_s": 0.00859967339783907,
+    "last10_max_angular_speed_rad_s": 0.05541152134537697
+  },
+  {
+    "episode_index": 32,
+    "last10_max_linear_speed_m_s": 0.008618749678134918,
+    "last10_max_angular_speed_rad_s": 0.05574982985854149
+  },
+  {
+    "episode_index": 33,
+    "last10_max_linear_speed_m_s": 0.008636187762022018,
+    "last10_max_angular_speed_rad_s": 0.05575695261359215
+  },
+  {
+    "episode_index": 34,
+    "last10_max_linear_speed_m_s": 0.008607504889369011,
+    "last10_max_angular_speed_rad_s": 0.05586811527609825
+  },
+  {
+    "episode_index": 35,
+    "last10_max_linear_speed_m_s": 0.008603128604590893,
+    "last10_max_angular_speed_rad_s": 0.055534664541482925
+  },
+  {
+    "episode_index": 36,
+    "last10_max_linear_speed_m_s": 0.008608812466263771,
+    "last10_max_angular_speed_rad_s": 0.055740173906087875
+  },
+  {
+    "episode_index": 37,
+    "last10_max_linear_speed_m_s": 0.008618435822427273,
+    "last10_max_angular_speed_rad_s": 0.055601730942726135
+  },
+  {
+    "episode_index": 38,
+    "last10_max_linear_speed_m_s": 0.008596856147050858,
+    "last10_max_angular_speed_rad_s": 0.055696677416563034
+  },
+  {
+    "episode_index": 39,
+    "last10_max_linear_speed_m_s": 0.008620079606771469,
+    "last10_max_angular_speed_rad_s": 0.05581376329064369
+  }
+]

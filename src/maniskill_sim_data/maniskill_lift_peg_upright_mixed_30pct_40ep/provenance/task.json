@@ -1,0 +1,7 @@
+{
+  "task": "lift",
+  "instruction": "Stand the peg upright on the table.",
+  "control_mode": "pd_joint_pos",
+  "state": "Panda qpos: 7 arm joints + 2 fingers",
+  "fps": 20
+}

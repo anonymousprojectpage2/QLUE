@@ -1,0 +1,22 @@
+{
+  "clean": {
+    "episode_index": 1,
+    "seed": 2,
+    "frames": 248
+  },
+  "stop": {
+    "episode_index": 5,
+    "seed": 6,
+    "frames": 281
+  },
+  "recovery": {
+    "episode_index": 4,
+    "seed": 5,
+    "frames": 364
+  },
+  "detour": {
+    "episode_index": 0,
+    "seed": 0,
+    "frames": 379
+  }
+}

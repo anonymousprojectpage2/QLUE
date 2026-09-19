@@ -1,0 +1,450 @@
+{
+  "sampling_seed": 20260913,
+  "source_counts": {
+    "clean": 28,
+    "stop": 4,
+    "recovery": 4,
+    "detour": 4
+  },
+  "pool_clean_count": 48,
+  "pool_fully_paired_count": 20,
+  "selection_rule": "Choose 12 fully paired seeds, then 28 distinct additional successful clean seeds; shuffle balanced variant labels.",
+  "episodes": [
+    {
+      "episode_index": 0,
+      "seed": 0,
+      "condition": "detour",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/detour/seed_0000",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0000",
+      "frames": 379,
+      "quality_checks": {
+        "path_ratio": 2.0023419805382168
+      },
+      "source_sha256": "7dff75d9fe70afb14e4805c493649227fadd47195817894d14f846c2969f20f0"
+    },
+    {
+      "episode_index": 1,
+      "seed": 2,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0002",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0002",
+      "frames": 248,
+      "quality_checks": {},
+      "source_sha256": "f13ae713d6a390448062d4dd8befaecb4689c37f66c3df1b9508a02ee9b5b8e6"
+    },
+    {
+      "episode_index": 2,
+      "seed": 3,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0003",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0003",
+      "frames": 260,
+      "quality_checks": {},
+      "source_sha256": "ae8de6c07e19cad8cd5508357b57e702934b0842b76579abaab9f3acb1581d43"
+    },
+    {
+      "episode_index": 3,
+      "seed": 4,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0004",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0004",
+      "frames": 243,
+      "quality_checks": {},
+      "source_sha256": "1880cff7bc5ca5957a68ff80f06c2429b30dcc745c5c7d127ecfd93bcfd25f8f"
+    },
+    {
+      "episode_index": 4,
+      "seed": 5,
+      "condition": "recovery",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/recovery/seed_0005",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0005",
+      "frames": 364,
+      "quality_checks": {
+        "failed_grasp_peg_displacement_m": 0.0011919800890609622
+      },
+      "source_sha256": "d371c9f735fa3d7403fd5670d5a0b6064070501533af12957deac393551e1ed6"
+    },
+    {
+      "episode_index": 5,
+      "seed": 6,
+      "condition": "stop",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/stop/seed_0006",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0006",
+      "frames": 281,
+      "quality_checks": {
+        "stop_before_grasp_tcp_drift_m": 0.0,
+        "stop_before_grasp_peg_drift_m": 1.0019996352639282e-06,
+        "stop_after_lift_tcp_drift_m": 0.003404875984415412,
+        "stop_after_lift_peg_drift_m": 0.0041281236335635185
+      },
+      "source_sha256": "76efbf132b8efb2e7c1a0f8db4577ee6ab447bde54c2473ebebe13101b0394fd"
+    },
+    {
+      "episode_index": 6,
+      "seed": 7,
+      "condition": "stop",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/stop/seed_0007",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0007",
+      "frames": 294,
+      "quality_checks": {
+        "stop_before_grasp_tcp_drift_m": 0.0,
+        "stop_before_grasp_peg_drift_m": 9.783551604414242e-07,
+        "stop_after_lift_tcp_drift_m": 0.003485191846266389,
+        "stop_after_lift_peg_drift_m": 0.004262507427483797
+      },
+      "source_sha256": "8a38c52da16b32970005b59062ff329f436e1c08b057ad15a1b6ecf401917283"
+    },
+    {
+      "episode_index": 7,
+      "seed": 9,
+      "condition": "recovery",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/recovery/seed_0009",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0009",
+      "frames": 359,
+      "quality_checks": {
+        "failed_grasp_peg_displacement_m": 3.682716624098248e-06
+      },
+      "source_sha256": "6493f40ec4ca0498990fe307923d7577c49679b0add7fcdffaa0d2bb3c604d76"
+    },
+    {
+      "episode_index": 8,
+      "seed": 10,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0010",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0010",
+      "frames": 247,
+      "quality_checks": {},
+      "source_sha256": "9c8012d01faa6076cbfae774862959989937f2ec15bc9a6ee5d87b08dc800a11"
+    },
+    {
+      "episode_index": 9,
+      "seed": 11,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0011",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0011",
+      "frames": 249,
+      "quality_checks": {},
+      "source_sha256": "8092fb9b5f5681b50cc8a0905fefbb299e05d83e873286dc090b545a022dbd71"
+    },
+    {
+      "episode_index": 10,
+      "seed": 12,
+      "condition": "recovery",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/recovery/seed_0012",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0012",
+      "frames": 384,
+      "quality_checks": {
+        "failed_grasp_peg_displacement_m": 4.9972372835327405e-06
+      },
+      "source_sha256": "5fa5639f8d53561cde2e56127d81b5ae8a49b89f79a3b635c3ce8dc541b55493"
+    },
+    {
+      "episode_index": 11,
+      "seed": 13,
+      "condition": "recovery",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/recovery/seed_0013",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0013",
+      "frames": 365,
+      "quality_checks": {
+        "failed_grasp_peg_displacement_m": 3.7191614410403417e-06
+      },
+      "source_sha256": "362b38c82bf16460facc3d3c2039ae18758a96e28f6272263bd41bd9e3ab2d00"
+    },
+    {
+      "episode_index": 12,
+      "seed": 14,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0014",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0014",
+      "frames": 251,
+      "quality_checks": {},
+      "source_sha256": "84bd4d94b67ce596740e2f8f471f18ca59395d7c72ed4d62e2db96b288f4e63b"
+    },
+    {
+      "episode_index": 13,
+      "seed": 15,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0015",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0015",
+      "frames": 248,
+      "quality_checks": {},
+      "source_sha256": "45d25e8bceede5703d6a983dfc8c47e2f1c03d7c245ebdbfd5a136a8716ff288"
+    },
+    {
+      "episode_index": 14,
+      "seed": 16,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0016",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0016",
+      "frames": 256,
+      "quality_checks": {},
+      "source_sha256": "fb1b9e377a0cb530cadaec7e08b5f4723bcaa0564f5cbd81a146390fc243ead7"
+    },
+    {
+      "episode_index": 15,
+      "seed": 17,
+      "condition": "detour",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/detour/seed_0017",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0017",
+      "frames": 369,
+      "quality_checks": {
+        "path_ratio": 1.9679455695422505
+      },
+      "source_sha256": "d239a1394c34577f986083f74d2b8dcda331f2dfe294121c1b42ad48b908d39f"
+    },
+    {
+      "episode_index": 16,
+      "seed": 18,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0018",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0018",
+      "frames": 248,
+      "quality_checks": {},
+      "source_sha256": "3cd63bd200fe274f1d19f40a068ab8dcdc9b6a993692f03769478444199c3816"
+    },
+    {
+      "episode_index": 17,
+      "seed": 20,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0020",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0020",
+      "frames": 250,
+      "quality_checks": {},
+      "source_sha256": "3615dd9a2ce2c04b8837f3fc61bdba7fc6a281a7461e5fd74428697264287bdd"
+    },
+    {
+      "episode_index": 18,
+      "seed": 21,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0021",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0021",
+      "frames": 257,
+      "quality_checks": {},
+      "source_sha256": "51b27643610388ad8f9322c8428690992c76aa42f2d549d768182d0a2da380ac"
+    },
+    {
+      "episode_index": 19,
+      "seed": 22,
+      "condition": "stop",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/stop/seed_0022",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0022",
+      "frames": 283,
+      "quality_checks": {
+        "stop_before_grasp_tcp_drift_m": 0.0,
+        "stop_before_grasp_peg_drift_m": 1.0084705763802049e-06,
+        "stop_after_lift_tcp_drift_m": 0.0033080403227359056,
+        "stop_after_lift_peg_drift_m": 0.00423115910962224
+      },
+      "source_sha256": "0a9f031a969b1d93f6bbb97c5f3ab9d51baa430e3b1f40ee6b4a71e38d4a8313"
+    },
+    {
+      "episode_index": 20,
+      "seed": 23,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0023",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0023",
+      "frames": 238,
+      "quality_checks": {},
+      "source_sha256": "7cb77d201595f1da3ad53517645187e2a468a28575e7f5dd6a537901492a26a9"
+    },
+    {
+      "episode_index": 21,
+      "seed": 24,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0024",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0024",
+      "frames": 240,
+      "quality_checks": {},
+      "source_sha256": "31ca7b525c6a448256af6965f2ff3956b9643a749baf3d73dcef3389f2b8ec2a"
+    },
+    {
+      "episode_index": 22,
+      "seed": 25,
+      "condition": "detour",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/detour/seed_0025",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0025",
+      "frames": 368,
+      "quality_checks": {
+        "path_ratio": 2.1406027282446556
+      },
+      "source_sha256": "31b8c7989ed4ac4bfb38d9b4021cda534716e4593ff1b9c77df1dca96f8566e0"
+    },
+    {
+      "episode_index": 23,
+      "seed": 26,
+      "condition": "detour",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/detour/seed_0026",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0026",
+      "frames": 370,
+      "quality_checks": {
+        "path_ratio": 2.0870673575938254
+      },
+      "source_sha256": "4e167139d57b5dfd24071c5e706f4f9111c76d28aafd0495451adf93e6e52742"
+    },
+    {
+      "episode_index": 24,
+      "seed": 27,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0027",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0027",
+      "frames": 256,
+      "quality_checks": {},
+      "source_sha256": "d44b6356095f03cbc87c0d3a577bb86606392a0eed0044c849aafb33df5a0279"
+    },
+    {
+      "episode_index": 25,
+      "seed": 28,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0028",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0028",
+      "frames": 252,
+      "quality_checks": {},
+      "source_sha256": "833ebb80f4d72d6018754de8cfdb61827ddd1535aebc3298f0363ff5760247b5"
+    },
+    {
+      "episode_index": 26,
+      "seed": 29,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0029",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0029",
+      "frames": 243,
+      "quality_checks": {},
+      "source_sha256": "45cd62b524547e2fd910645406d286c79e857b6a051b21469830298ef5b26618"
+    },
+    {
+      "episode_index": 27,
+      "seed": 30,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0030",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0030",
+      "frames": 464,
+      "quality_checks": {},
+      "source_sha256": "4e445fe52120d1b4dea6b978b273e67c7a2f6bcc48893c15cc9d03dc33bba40a"
+    },
+    {
+      "episode_index": 28,
+      "seed": 33,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0033",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0033",
+      "frames": 246,
+      "quality_checks": {},
+      "source_sha256": "daae8e2743a4f1571ca825de8512ed09bc1882ead8c4360a93c2a27246655fe7"
+    },
+    {
+      "episode_index": 29,
+      "seed": 35,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0035",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0035",
+      "frames": 239,
+      "quality_checks": {},
+      "source_sha256": "00521369d11fa2282e16a93d6e1ddcf3c6acad1ddfe24bcc4383db654009e550"
+    },
+    {
+      "episode_index": 30,
+      "seed": 36,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0036",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0036",
+      "frames": 254,
+      "quality_checks": {},
+      "source_sha256": "5cba7b1dcde920356123d5d98cfa1b1148412978e8672f0ed5661497c8d09a76"
+    },
+    {
+      "episode_index": 31,
+      "seed": 38,
+      "condition": "stop",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/stop/seed_0038",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0038",
+      "frames": 293,
+      "quality_checks": {
+        "stop_before_grasp_tcp_drift_m": 0.0,
+        "stop_before_grasp_peg_drift_m": 1.0103644854098093e-06,
+        "stop_after_lift_tcp_drift_m": 0.0034458579029887915,
+        "stop_after_lift_peg_drift_m": 0.0042218309827148914
+      },
+      "source_sha256": "d39bea713c98dbe1213d3ca68c2bd3ded4db21e91914ad3efe21284d4c0ba927"
+    },
+    {
+      "episode_index": 32,
+      "seed": 39,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0039",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0039",
+      "frames": 261,
+      "quality_checks": {},
+      "source_sha256": "631256ccf37a024c759c14b3ed8940490dcf81cf656fe35fbf63834f2903bc6f"
+    },
+    {
+      "episode_index": 33,
+      "seed": 41,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0041",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0041",
+      "frames": 245,
+      "quality_checks": {},
+      "source_sha256": "b57eed346d26146542eba20aa9c1a3854369b7086c18f584ff632ed6d409ffba"
+    },
+    {
+      "episode_index": 34,
+      "seed": 42,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0042",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0042",
+      "frames": 441,
+      "quality_checks": {},
+      "source_sha256": "5038e8980365fc154275a019c75aeb6fbbe5e71bd7841f6e4f35c829d47a1b8d"
+    },
+    {
+      "episode_index": 35,
+      "seed": 43,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0043",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0043",
+      "frames": 244,
+      "quality_checks": {},
+      "source_sha256": "b3f7a5329234b32620dead3b998f989bf600dbab346588b87487fde62ee3ba6a"
+    },
+    {
+      "episode_index": 36,
+      "seed": 45,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0045",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0045",
+      "frames": 244,
+      "quality_checks": {},
+      "source_sha256": "49ea30bf770cdc6d6cedc2b28cb9b51913bc7e33905688323f6b51b60bd87e41"
+    },
+    {
+      "episode_index": 37,
+      "seed": 46,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0046",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0046",
+      "frames": 251,
+      "quality_checks": {},
+      "source_sha256": "1450b9129b2dcc2ab69600a67f2963cc9e0ee8e3e446d1a50d50399b2ac631b5"
+    },
+    {
+      "episode_index": 38,
+      "seed": 47,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0047",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0047",
+      "frames": 264,
+      "quality_checks": {},
+      "source_sha256": "e59940804e7c3542ade4e391a113fa333c968979480ec903b2308ad2c1665429"
+    },
+    {
+      "episode_index": 39,
+      "seed": 48,
+      "condition": "clean",
+      "source_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0048",
+      "clean_reference_dir": "source_workspace/pi0_work/maniskill_Sim/data/peg_quality_pool_v1/lift/clean/seed_0048",
+      "frames": 252,
+      "quality_checks": {},
+      "source_sha256": "f2f70f4991e3b1a1038c58e3f6383b7be112d3536bc0d8e36661e1b7d6ff9b10"
+    }
+  ]
+}
