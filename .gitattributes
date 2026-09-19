@@ -4,3 +4,4 @@ src/maniskill_sim_data/**/*.json text eol=lf
 src/maniskill_sim_data/**/*.md text eol=lf
 src/maniskill_sim_data/**/*.py text eol=lf
 src/maniskill_sim_data/**/*.txt text eol=lf
+src/maniskill_sim_data/**/*.h5 filter=lfs diff=lfs merge=lfs -text

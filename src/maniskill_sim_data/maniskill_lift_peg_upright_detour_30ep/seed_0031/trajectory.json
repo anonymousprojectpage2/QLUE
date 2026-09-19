@@ -1,0 +1,33 @@
+{
+  "env_info": {
+    "env_id": "LiftPegUpright-v1",
+    "max_episode_steps": 900,
+    "env_kwargs": {
+      "robot_uids": "panda_wristcam",
+      "obs_mode": "none",
+      "control_mode": "pd_joint_pos",
+      "reward_mode": "sparse",
+      "render_mode": null,
+      "sim_backend": "physx_cpu",
+      "render_backend": "none",
+      "num_envs": 1,
+      "max_episode_steps": 900
+    }
+  },
+  "source_type": "motionplanning",
+  "source_desc": "four-behavior peg dataset with trace quality gates",
+  "episodes": [
+    {
+      "episode_id": 0,
+      "episode_seed": 31,
+      "reset_kwargs": {
+        "seed": 31
+      },
+      "control_mode": "pd_joint_pos",
+      "elapsed_steps": 365,
+      "info": {
+        "success": true
+      }
+    }
+  ]
+}
