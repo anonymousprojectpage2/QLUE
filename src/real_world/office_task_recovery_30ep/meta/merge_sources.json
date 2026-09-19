@@ -1,0 +1,32 @@
+{
+  "mapping_version": 1,
+  "merge_strategy": "chronological_concatenation",
+  "output": {
+    "root": "source_datasets/office_task_recovery_30ep_merged_20260912_171300_174334",
+    "repo_id": "office_task_recovery_30ep",
+    "total_episodes": 30,
+    "total_frames": 20275
+  },
+  "sources": [
+    {
+      "root": "source_datasets/office_task_recovery_30ep_20260912_171300",
+      "total_episodes": 5,
+      "total_frames": 3755,
+      "source_episode_indices": [0, 4],
+      "output_episode_indices": [0, 4],
+      "index_rule": "output_index = source_index",
+      "info_sha256": "ee890da3b21b3d76595b24c443419faa6fbca0274c3115ec699badd27562619f",
+      "tasks_sha256": "bde11b796712164225eab05175cc9431408681c1a716255b9d11104959ace6e5"
+    },
+    {
+      "root": "source_datasets/office_task_recovery_30ep_20260912_174334",
+      "total_episodes": 25,
+      "total_frames": 16520,
+      "source_episode_indices": [0, 24],
+      "output_episode_indices": [5, 29],
+      "index_rule": "output_index = source_index + 5",
+      "info_sha256": "707b278da7769abd0d636570c274fead8da880b3cd4990488d198b5a1e954a0f",
+      "tasks_sha256": "bde11b796712164225eab05175cc9431408681c1a716255b9d11104959ace6e5"
+    }
+  ]
+}
