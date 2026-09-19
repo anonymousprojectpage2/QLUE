@@ -1,0 +1,487 @@
+{
+  "mapping_version": 1,
+  "selection_strategy": "seeded_nested_indices_balanced_suboptimal_kinds",
+  "seed": 1000,
+  "suboptimal_percentage": 30,
+  "total_episodes": 40,
+  "expected_total_frames": 22522,
+  "counts": {
+    "clean": 28,
+    "stop": 4,
+    "detour": 4,
+    "recovery": 4
+  },
+  "replacement_rule": "selected clean episode n is replaced by the assigned sub-optimal source episode n; output episode index remains n",
+  "replacement_candidate_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "replacement_index_order": [
+    9,
+    22,
+    19,
+    6,
+    8,
+    0,
+    1,
+    26,
+    23,
+    27,
+    18,
+    25,
+    15,
+    10,
+    20,
+    16,
+    7,
+    4,
+    28,
+    17,
+    5,
+    14,
+    2,
+    11,
+    12,
+    3,
+    29,
+    21,
+    13,
+    24
+  ],
+  "replacement_kind_order": [
+    "detour",
+    "recovery",
+    "stop",
+    "recovery",
+    "detour",
+    "stop",
+    "recovery",
+    "detour",
+    "stop",
+    "stop",
+    "detour",
+    "recovery",
+    "stop",
+    "detour",
+    "recovery",
+    "detour",
+    "stop",
+    "recovery",
+    "detour",
+    "stop",
+    "recovery",
+    "recovery",
+    "detour",
+    "stop",
+    "detour",
+    "stop",
+    "recovery",
+    "detour",
+    "stop",
+    "recovery"
+  ],
+  "replaced_clean_episode_indices": [
+    0,
+    1,
+    6,
+    8,
+    9,
+    18,
+    19,
+    22,
+    23,
+    25,
+    26,
+    27
+  ],
+  "selected_replacements_in_order": [
+    {
+      "episode_index": 9,
+      "source_kind": "detour"
+    },
+    {
+      "episode_index": 22,
+      "source_kind": "recovery"
+    },
+    {
+      "episode_index": 19,
+      "source_kind": "stop"
+    },
+    {
+      "episode_index": 6,
+      "source_kind": "recovery"
+    },
+    {
+      "episode_index": 8,
+      "source_kind": "detour"
+    },
+    {
+      "episode_index": 0,
+      "source_kind": "stop"
+    },
+    {
+      "episode_index": 1,
+      "source_kind": "recovery"
+    },
+    {
+      "episode_index": 26,
+      "source_kind": "detour"
+    },
+    {
+      "episode_index": 23,
+      "source_kind": "stop"
+    },
+    {
+      "episode_index": 27,
+      "source_kind": "stop"
+    },
+    {
+      "episode_index": 18,
+      "source_kind": "detour"
+    },
+    {
+      "episode_index": 25,
+      "source_kind": "recovery"
+    }
+  ],
+  "sources": {
+    "clean": {
+      "root": "source_datasets/office_task_clean_40ep_20260911_155518",
+      "total_episodes": 40,
+      "total_frames": 21389,
+      "info_sha256": "1c58e0ba75c16801039abeccae0400d04f453df4faa7db0b8b360e85d7b28e86",
+      "tasks_sha256": "bde11b796712164225eab05175cc9431408681c1a716255b9d11104959ace6e5"
+    },
+    "stop": {
+      "root": "source_datasets/office_task_stop_30ep_20260911_210051",
+      "total_episodes": 30,
+      "total_frames": 18765,
+      "info_sha256": "0836c1346a1400e88bb7ea3e3a3491998d87bdb5b9480356b0fd408a1313c46f",
+      "tasks_sha256": "bde11b796712164225eab05175cc9431408681c1a716255b9d11104959ace6e5"
+    },
+    "detour": {
+      "root": "source_datasets/office_task_detour_30ep_20260911_213633",
+      "total_episodes": 30,
+      "total_frames": 18702,
+      "info_sha256": "b29fd9a75e931d7ac15134e2cd87b44e70bde1462403f4ca37466d91df6161de",
+      "tasks_sha256": "bde11b796712164225eab05175cc9431408681c1a716255b9d11104959ace6e5"
+    },
+    "recovery": {
+      "root": "source_datasets/office_task_recovery_30ep_merged_20260912_171300_174334",
+      "total_episodes": 30,
+      "total_frames": 20275,
+      "info_sha256": "b99a0cee188e98cc74902a24def8ffeee1702394bc248a8fcd2829649792721a",
+      "tasks_sha256": "bde11b796712164225eab05175cc9431408681c1a716255b9d11104959ace6e5"
+    }
+  },
+  "episode_sources": [
+    {
+      "output_episode_index": 0,
+      "source_kind": "stop",
+      "source_episode_index": 0,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 1,
+      "source_kind": "recovery",
+      "source_episode_index": 1,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 2,
+      "source_kind": "clean",
+      "source_episode_index": 2,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 3,
+      "source_kind": "clean",
+      "source_episode_index": 3,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 4,
+      "source_kind": "clean",
+      "source_episode_index": 4,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 5,
+      "source_kind": "clean",
+      "source_episode_index": 5,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 6,
+      "source_kind": "recovery",
+      "source_episode_index": 6,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 10
+    },
+    {
+      "output_episode_index": 7,
+      "source_kind": "clean",
+      "source_episode_index": 7,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 8,
+      "source_kind": "detour",
+      "source_episode_index": 8,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 9,
+      "source_kind": "detour",
+      "source_episode_index": 9,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 10
+    },
+    {
+      "output_episode_index": 10,
+      "source_kind": "clean",
+      "source_episode_index": 10,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 11,
+      "source_kind": "clean",
+      "source_episode_index": 11,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 12,
+      "source_kind": "clean",
+      "source_episode_index": 12,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 13,
+      "source_kind": "clean",
+      "source_episode_index": 13,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 14,
+      "source_kind": "clean",
+      "source_episode_index": 14,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 15,
+      "source_kind": "clean",
+      "source_episode_index": 15,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 16,
+      "source_kind": "clean",
+      "source_episode_index": 16,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 17,
+      "source_kind": "clean",
+      "source_episode_index": 17,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 18,
+      "source_kind": "detour",
+      "source_episode_index": 18,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 19,
+      "source_kind": "stop",
+      "source_episode_index": 19,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 10
+    },
+    {
+      "output_episode_index": 20,
+      "source_kind": "clean",
+      "source_episode_index": 20,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 21,
+      "source_kind": "clean",
+      "source_episode_index": 21,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 22,
+      "source_kind": "recovery",
+      "source_episode_index": 22,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 10
+    },
+    {
+      "output_episode_index": 23,
+      "source_kind": "stop",
+      "source_episode_index": 23,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 24,
+      "source_kind": "clean",
+      "source_episode_index": 24,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 25,
+      "source_kind": "recovery",
+      "source_episode_index": 25,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 26,
+      "source_kind": "detour",
+      "source_episode_index": 26,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 27,
+      "source_kind": "stop",
+      "source_episode_index": 27,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 30
+    },
+    {
+      "output_episode_index": 28,
+      "source_kind": "clean",
+      "source_episode_index": 28,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 29,
+      "source_kind": "clean",
+      "source_episode_index": 29,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 30,
+      "source_kind": "clean",
+      "source_episode_index": 30,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 31,
+      "source_kind": "clean",
+      "source_episode_index": 31,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 32,
+      "source_kind": "clean",
+      "source_episode_index": 32,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 33,
+      "source_kind": "clean",
+      "source_episode_index": 33,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 34,
+      "source_kind": "clean",
+      "source_episode_index": 34,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 35,
+      "source_kind": "clean",
+      "source_episode_index": 35,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 36,
+      "source_kind": "clean",
+      "source_episode_index": 36,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 37,
+      "source_kind": "clean",
+      "source_episode_index": 37,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 38,
+      "source_kind": "clean",
+      "source_episode_index": 38,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    },
+    {
+      "output_episode_index": 39,
+      "source_kind": "clean",
+      "source_episode_index": 39,
+      "same_index_replacement": true,
+      "introduced_at_percentage": 0
+    }
+  ]
+}
