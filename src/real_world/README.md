@@ -1,6 +1,6 @@
 # Real-world demonstration datasets
 
-SO-101 manipulation datasets in LeRobot v3.0 format: three mixed datasets and nine behavior-specific datasets. Videos contain front and top camera views at 30 FPS.
+SO-101 manipulation datasets in LeRobot v3.0 format: three mixed datasets, two clean datasets, and nine behavior-specific datasets. Videos contain front and top camera views at 30 FPS.
 
 ## Mixed datasets
 
@@ -9,6 +9,13 @@ SO-101 manipulation datasets in LeRobot v3.0 format: three mixed datasets and ni
 | [office_task_mixed_30pct](office_task_mixed_30pct/) | 40 | 22,522 |
 | [multi_pick_and_place_mixed_30pct](multi_pick_and_place_mixed_30pct/) | 40 | 21,389 |
 | [stack_cube_mixed_30pct](stack_cube_mixed_30pct/) | 40 | 14,742 |
+
+## Clean datasets
+
+| Task directory | Episodes | Frames |
+| --- | ---: | ---: |
+| [office_task_clean_40ep](office_task_clean_40ep/) | 40 | 21,389 |
+| [multi_pick_and_place_clean_40ep](multi_pick_and_place_clean_40ep/) | 40 | 20,104 |
 
 ## Behavior-specific datasets
 
